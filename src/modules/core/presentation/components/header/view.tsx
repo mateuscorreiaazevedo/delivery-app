@@ -1,7 +1,7 @@
 import { Feather, Ionicons } from '@expo/vector-icons'
 import { Pressable, Text, View } from 'react-native'
 
-import { useHeaderModel } from '~/src/modules/core/components/header/model'
+import { useHeaderModel } from './model'
 
 type ViewProps = ReturnType<typeof useHeaderModel>
 
