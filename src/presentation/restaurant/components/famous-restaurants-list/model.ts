@@ -12,7 +12,7 @@ export const useFamousRestaurantsListModel = () => {
       return restaurantFactory.getAllRestaurants.execute()
     } catch (e) {
       setError((e as Error).message)
-      return []
+      throw Error
     }
   }
 

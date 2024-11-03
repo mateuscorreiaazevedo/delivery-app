@@ -2,6 +2,7 @@ import Constants from 'expo-constants'
 import { ScrollView, View } from 'react-native'
 
 import { TrendingFoods } from '@/presentation/food/components'
+import { FamousRestaurantsList } from '@/presentation/restaurant/components'
 import { Banner, Header, Search, Section } from '@/presentation/shared/components'
 
 const statusBarHeight = Constants.statusBarHeight
@@ -28,6 +29,7 @@ export default function Home() {
           labelButton="Ver todos"
           actionButton={() => console.log('Veja mais')}
         />
+        <FamousRestaurantsList />
       </View>
     </ScrollView>
   )
