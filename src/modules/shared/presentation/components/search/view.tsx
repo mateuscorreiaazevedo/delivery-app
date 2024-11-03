@@ -1,7 +1,7 @@
 import { Feather } from '@expo/vector-icons'
 import { TextInput, View } from 'react-native'
 
-import { useSearchModel } from '@/modules/core/presentation/components/search/model'
+import { useSearchModel } from '@/modules/shared/presentation/components/search/model'
 
 type SearchViewProps = ReturnType<typeof useSearchModel>
 

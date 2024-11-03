@@ -1,7 +1,7 @@
 import Constants from 'expo-constants'
 import { ScrollView, View } from 'react-native'
 
-import { Banner, Header, Search, Section } from '@/modules/core/presentation'
+import { Banner, Header, Search, Section } from '@/modules/shared/presentation'
 
 const statusBarHeight = Constants.statusBarHeight
 

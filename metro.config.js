@@ -6,4 +6,6 @@ const { withNativeWind } = require('nativewind/metro')
 // eslint-disable-next-line no-undef
 const config = getDefaultConfig(__dirname)
 
-module.exports = withNativeWind(config, { input: './src/styles/global.css' })
+module.exports = withNativeWind(config, {
+  input: './src/modules/shared/presentation/styles/global.css',
+})
