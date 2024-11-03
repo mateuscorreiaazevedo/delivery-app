@@ -14,14 +14,21 @@ export default function Home() {
         <Banner />
         <Search />
       </View>
-      <Section
-        marginTop={10}
-        title="Comidas em alta"
-        size="text-2xl"
-        labelButton="Ver todos"
-        actionButton={() => console.log('Veja mais')}
-      />
-      <TrendingFoods />
+      <View className="mt-2.5 gap-2.5">
+        <Section
+          title="Comidas em alta"
+          size="text-2xl"
+          labelButton="Ver todos"
+          actionButton={() => console.log('Veja mais')}
+        />
+        <TrendingFoods />
+        <Section
+          title="Famosos no DevFood"
+          size="text-lg"
+          labelButton="Ver todos"
+          actionButton={() => console.log('Veja mais')}
+        />
+      </View>
     </ScrollView>
   )
 }

@@ -12,6 +12,7 @@ export function TrendingFoodsView(props: ViewProps) {
     <FlatList
       horizontal
       data={trendingFoods}
+      className="mt-2.5"
       contentContainerClassName="gap-x-4 px-4"
       renderItem={({ item }) => <CardFoodItem {...item} />}
       showsHorizontalScrollIndicator={false}
