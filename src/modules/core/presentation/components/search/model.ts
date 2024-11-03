@@ -1,0 +1,3 @@
+export function useSearchModel() {
+  return {}
+}

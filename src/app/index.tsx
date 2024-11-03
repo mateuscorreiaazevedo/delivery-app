@@ -1,7 +1,7 @@
 import Constants from 'expo-constants'
 import { ScrollView, View } from 'react-native'
 
-import { Banner, Header } from '@/modules/core/presentation'
+import { Banner, Header, Search } from '@/modules/core/presentation'
 
 const statusBarHeight = Constants.statusBarHeight
 
@@ -11,6 +11,7 @@ export default function Home() {
       <View className="w-full gap-2 px-4 pt-2.5" style={{ marginTop: statusBarHeight }}>
         <Header />
         <Banner />
+        <Search />
       </View>
     </ScrollView>
   )
