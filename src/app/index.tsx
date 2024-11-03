@@ -1,9 +1,16 @@
-import { Text, View } from 'react-native'
+import Constants from 'expo-constants'
+import { ScrollView, View } from 'react-native'
+
+import { Header } from '../modules/core/components/header'
+
+const statusBarHeight = Constants.statusBarHeight
 
 export default function Home() {
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="text-2xl">Olá</Text>
-    </View>
+    <ScrollView className="flex-1 bg-slate-200 ">
+      <View className="w-full px-4 pt-2.5" style={{ marginTop: statusBarHeight }}>
+        <Header />
+      </View>
+    </ScrollView>
   )
 }
