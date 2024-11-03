@@ -10,11 +10,13 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0",
     "web": "expo start --web",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "server": "json-server --watch db.json --port 5555"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.1.7",
+    "axios": "^1.7.7",
     "expo": "^51.0.38",
     "expo-constants": "~16.0.1",
     "expo-linking": "~6.3.1",
@@ -22,6 +24,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.4",
     "expo-web-browser": "~13.0.3",
+    "json-server": "^1.0.0-beta.3",
     "nativewind": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
