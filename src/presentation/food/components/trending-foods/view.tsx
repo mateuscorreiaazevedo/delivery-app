@@ -7,5 +7,14 @@ type ViewProps = ReturnType<typeof useTrendingFoodsModel>
 
 export function TrendingFoodsView(props: ViewProps) {
   const { trendingFoods } = props
-  return <FlatList data={trendingFoods} renderItem={() => <CardFoodItem />} />
+
+  return (
+    <FlatList
+      horizontal
+      data={trendingFoods}
+      contentContainerClassName="gap-x-4 px-4"
+      renderItem={({ item }) => <CardFoodItem {...item} />}
+      showsHorizontalScrollIndicator={false}
+    />
+  )
 }

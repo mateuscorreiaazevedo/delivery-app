@@ -4,7 +4,7 @@ import { HttpClient, HttpClientRequest, HttpClientResponse } from './http-client
 
 import envConfig from '@/main/config/env-config'
 
-export class HttpClientService implements HttpClient {
+export class AxiosHttpClientService implements HttpClient {
   private http: AxiosInstance
 
   constructor(private readonly baseURL: string = envConfig.BASE_URL) {

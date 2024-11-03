@@ -14,3 +14,10 @@ export interface HttpClientResponse<T = unknown> {
 export abstract class HttpClient {
   abstract request<T = unknown>(props: HttpClientRequest): Promise<HttpClientResponse<T>>
 }
+
+export enum HttpStatusCode {
+  OK = 200,
+  CREATED = 201,
+  BAD_REQUEST = 400,
+  SERVER_ERROR = 500,
+}
