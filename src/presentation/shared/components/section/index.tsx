@@ -5,13 +5,14 @@ type SectionProps = {
   size?: 'text-lg' | 'text-xl' | 'text-2xl'
   labelButton: string
   actionButton: () => void
+  marginTop?: number
 }
 
 export function Section(props: SectionProps) {
-  const { title, size = 'text-lg', labelButton, actionButton } = props
+  const { title, size = 'text-lg', labelButton, actionButton, marginTop } = props
 
   return (
-    <View className="w-full flex-row items-center justify-between px-4">
+    <View style={{ marginTop }} className="w-full flex-row items-center justify-between px-4">
       <Text className={`${size} font-semibold text-slate-900`}>{title}</Text>
       <TouchableOpacity activeOpacity={0.7} onPress={actionButton}>
         <Text className="text-sm font-light text-zinc-800">{labelButton}</Text>

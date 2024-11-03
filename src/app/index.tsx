@@ -14,8 +14,9 @@ export default function Home() {
         <Search />
       </View>
       <Section
-        title="Famosos no DevFood"
-        size="text-lg"
+        marginTop={10}
+        title="Comidas em alta"
+        size="text-2xl"
         labelButton="Ver todos"
         actionButton={() => console.log('Veja mais')}
       />
