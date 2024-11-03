@@ -1,16 +1,13 @@
 import axios, { AxiosError, AxiosInstance, AxiosResponse } from 'axios'
 
-import {
-  HttpClient,
-  HttpClientRequest,
-  HttpClientResponse,
-} from '@/modules/shared/application/data/http-client'
-import env from '@/modules/shared/configs/env'
+import { HttpClient, HttpClientRequest, HttpClientResponse } from './http-client'
+
+import envConfig from '@/main/config/env-config'
 
 export class HttpClientService implements HttpClient {
   private http: AxiosInstance
 
-  constructor(private readonly baseURL: string = env.BASE_URL) {
+  constructor(private readonly baseURL: string = envConfig.BASE_URL) {
     this.http = axios.create({
       baseURL: this.baseURL,
       headers: {

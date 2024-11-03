@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { NativeSyntheticEvent } from 'react-native'
 import PagerView from 'react-native-pager-view'
 
+import { SliderBannerType } from './types'
+
 type ModelProps = {
   timeInMs?: number
 }
@@ -12,14 +14,14 @@ export function useBannerModel(props: ModelProps = {}) {
   const pagerViewRef = useRef<PagerView>(null)
   const [, setCurrentPage] = useState(0)
 
-  const slides: SlideBanner[] = [
+  const slides: SliderBannerType[] = [
     {
       key: '1',
-      path: require('../../images/banner1.png'),
+      path: require('../../../../assets/images/banner1.png'),
     },
     {
       key: '2',
-      path: require('../../images/banner2.png'),
+      path: require('../../../../assets/images/banner2.png'),
     },
   ]
 
