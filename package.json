@@ -8,7 +8,7 @@
     "start": "expo start",
     "prebuild": "expo prebuild",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0",
     "web": "expo start --web",
     "postinstall": "husky"
   },
