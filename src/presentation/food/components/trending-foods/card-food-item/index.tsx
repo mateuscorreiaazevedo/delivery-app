@@ -4,7 +4,11 @@ import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { Food } from '@/domain/food/entity/food'
 import { formatPrice } from '@/presentation/shared/utils/format-price'
 
-export function CardFoodItem(food: Food) {
+type Props = {
+  food: Food
+}
+
+export function CardFoodItem({ food }: Props) {
   return (
     <TouchableOpacity key={food.id} activeOpacity={0.8}>
       <View className="relative gap-1">
