@@ -2,14 +2,14 @@ import Constants from 'expo-constants'
 import { ScrollView, View } from 'react-native'
 
 import { TrendingFoods } from '@/presentation/food/components'
-import { FamousRestaurantsList } from '@/presentation/restaurant/components'
+import { AllRestaurantsList, FamousRestaurantsList } from '@/presentation/restaurant/components'
 import { Banner, Header, Search, Section } from '@/presentation/shared/components'
 
 const statusBarHeight = Constants.statusBarHeight
 
 export default function Home() {
   return (
-    <ScrollView className="flex-1 bg-slate-200">
+    <ScrollView className="flex-1 bg-slate-200" showsVerticalScrollIndicator={false}>
       <View className="w-full gap-2 px-4 pt-2.5" style={{ marginTop: statusBarHeight }}>
         <Header />
         <Banner />
@@ -30,6 +30,13 @@ export default function Home() {
           actionButton={() => console.log('Veja mais')}
         />
         <FamousRestaurantsList />
+        <Section
+          title="restaurantes"
+          size="text-xl"
+          labelButton="Ver todos"
+          actionButton={() => console.log('Veja mais')}
+        />
+        <AllRestaurantsList />
       </View>
     </ScrollView>
   )
