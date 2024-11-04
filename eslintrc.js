@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'warn',
     'react/react-in-jsx-scope': 'off',
+    'no-console': 'error',
   },
   settings: {
     react: {
